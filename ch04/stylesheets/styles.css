@@ -100,9 +100,13 @@ a[href='#'] {
 }
 
 .detail-image {
-    width:95%;
+    width:85%;
 }
 
+/* Usamos absolute position: ubicamos detail-image-title en la esquina inferior izquierda. Requerimientos para
+   el absolute position:
+   1. La propiedad position: absolute
+   2. Coordenadas, una o mas: top, right, bottom, left*/
 .detail-image-title {
     position: absolute;
     bottom: -0.3em;
