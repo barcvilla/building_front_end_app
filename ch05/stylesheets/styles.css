@@ -117,14 +117,18 @@ a[href='#'] {
     font-size: 4em;
 }
 
-
+/*
+    Media queries nos permiten agrupar bloques de declaraciones CSS y especifica las condiciones bajo las cuales debe ser
+    aplicado.
+    En esta media query se activara cuando se esta viendo en un dispositivo de 768 pixels por lo menos el cual es comun para tablets
+    con la condicion (min-width: 768px)
+ */
 @media all and (min-width: 768px) {
     .main-content {
         flex-direction: row;
         overflow: hidden;
     }
-
-    .thumbnail-list {
+    .thumbnail-list { /* mostramos la imagenes pequeñas en un columna */
         flex-direction: column;
         order: 0;
         margin-left: 2em;
